@@ -52,21 +52,12 @@ mariadb() {
 	sudo apt install mariadb-server mariadb-client -y;
 	check_exit_status
 
-	systemctl status mariadb;
-	check_exit_status
+	
 	sudo systemctl enable mariadb;
 	check_exit_status
 	
 
-	echo
-	echo "You Will need to enter New password"
-	echo
-	echo
-	exit;
-	sudo mysql_secure_installation;
-	check_exit_status
-	mariadb --version;
-	check_exit_status
+	
 }
 php7.4() {
 
