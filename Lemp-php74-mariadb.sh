@@ -38,7 +38,7 @@ update() {
 
 nginx() {
 
-	sudo apt intall nginx -y;
+	sudo apt install nginx -y;
 	check_exit_status
 	sudo systemctl enable nginx;
 	check_exit_status
